@@ -1,3 +1,7 @@
+<a href="https://mitp7.github.io/Fylo-LandingPage/">
+    <img src="images/logo.svg" alt="Fylo-logo" title="Fylo" align="right" height="61" />
+</a>
+
 # Fylo Dark Theme Landing Page
 
 ## Table of contents
@@ -11,7 +15,7 @@
 ## Overview
 
 ### The objective
-- Combine my HTML and CSS skills to create a front-end landing page. Implement components using CSS Grid skills to build a responsive page.
+- Combine my HTML and CSS skills to create a front-end landing page. Implement components using CSS Grid skills to ensure the page is responsive.
 
 Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
