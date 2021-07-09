@@ -1,3 +1,7 @@
+<a href="https://mitp7.github.io/Fylo-LandingPage/">
+    <img src="images/logo.svg" alt="Fylo logo" title="Fylo" align="right" height="60" />
+</a>
+
 # Fylo Dark Theme Landing Page
 
 ## Table of contents
