@@ -1,11 +1,7 @@
-<a href="https://mitp7.github.io/Fylo-LandingPage/">
-    <img src="images/logo.svg" alt="Fylo logo" title="Fylo" align="right" height="60" />
-</a>
-
 
 <h1 align="center">
   <br>
-  <a href="https://mitp7.github.io/Fylo-LandingPage/"><img src="images/logo.sv" alt="Fylo-logo" width="200"></a>
+  <a href="https://mitp7.github.io/Fylo-LandingPage/"><img src="images/logo.svg" alt="Fylo-logo" width="200"></a>
   <br>
   Fylo
   <br>
