@@ -1,8 +1,8 @@
 <a href="https://mitp7.github.io/Fylo-LandingPage/">
-    <img src="images/logo.svg" alt="Fylo-logo" title="Fylo" align="right" height="65" />
+    <img src="images/logo.svg" alt="Fylo-logo" title="Fylo" align="right" height="61" />
 </a>
 
-<h4 align="center">A responsive front end website built using HTML and CSS.</h4>
+# Fylo Dark Theme Landing Page
 
 ## Table of contents
 
