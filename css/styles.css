@@ -234,7 +234,7 @@ a {
     font-weight: 400;
     color: white;
     font-size: 13px;
-    padding: 0rem 12rem 0 0;
+    padding: 0rem 57% 0 0;
 }
 
 .user-1 {
@@ -329,6 +329,7 @@ a {
     padding: 1rem; 
     width: 50%;
     margin: 16% 0 0 5%;  
+    outline: none;
 }
 
 /* Footer */
