@@ -140,6 +140,7 @@ a {
     background-color: hsl(218, 28%, 13%);
 }
 
+/* Large image and learn more information under the features section */
 .banner {
     display: grid;
     grid-template-columns: repeat (2, 1fr);
@@ -198,7 +199,7 @@ a {
     font-weight: 700;
 }
 
-/* Three box grid containing user reviews */
+/* Three box grid (row) containing user reviews */
 .user-container {
     background-color: hsl(218, 28%, 13%);
     padding-bottom: 20rem;
@@ -266,6 +267,8 @@ a {
     background-position-y: 50%;
     position: relative;
 }
+
+/* One box grid containing the input box and button */
 .early-access {
     display: grid;
     position: absolute;
@@ -411,6 +414,7 @@ a {
     padding-bottom: 4rem;
 }
 
+/* Social media icons used in the footer */
 .icon {
     padding-right: 10px;
 }
@@ -572,6 +576,7 @@ ion-icon:hover {
     }
 }
 
+/* Media queries for the footer */
 @media(max-width: 767px){
     .footer-col {
         width: 50%;
