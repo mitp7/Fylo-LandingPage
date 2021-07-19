@@ -10,7 +10,9 @@
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -30,9 +32,15 @@ Users should be able to:
 
 -[Live Site URL](https://mitp7.github.io/Fylo-LandingPage/)
 
+## My process
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
 
+### What I learned
+
+From this challenge I learned more about CSS Grid and the various properties it has such as grid template columns, rows, and areas. Using these grid properties resulted in all of the components being very responsive further reducing the amount of time spent working with the media queries and adjusting the sizes for different sized screens.
+I also learned more about how to use background iamges and the correct ways to layout the images behind text and buttons. 
