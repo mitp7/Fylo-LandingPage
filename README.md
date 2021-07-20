@@ -9,7 +9,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -24,13 +23,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
 ![Desktop-version](./design/desktop-design.jpg)
-![Mobile-version](./design/mobile-design.jpg)
-
-### Links
-
--[Live Site URL](https://mitp7.github.io/Fylo-LandingPage/)
+#### Lighthouse Test Screenshot
+![Desktop-version](./design/desktop-design.jpg)
 
 ## My process
 
