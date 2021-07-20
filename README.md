@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 ![Desktop-version](./design/desktop-design.jpg)
 #### Lighthouse Test Screenshot
-![Desktop-version](./design/desktop-design.jpg)
+![Desktop-version](./images/lighthouse-test.PNG)
 
 ## My process
 
