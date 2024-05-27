@@ -12,7 +12,7 @@ a {
 /* The showcase div consists of the nav bar, the large file picture, the body (.showcase-content),
  and the blue button (.btn-primary). */
 .showcase {
-    height: 83.75rem;
+    height: 75rem;
     background-color: hsl(217, 28%, 15%);
     background-image: url('../images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
@@ -87,15 +87,16 @@ a {
 /* The features div consists of the four features offered: file, security, time, and store.*/
 .features-section {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (2, 1fr);
     grid-template-areas: 
-    "file-feature security-feature"
-    "time-feature store-feature";
+    "file security"
+    "time store";
     background-color: hsl(218, 28%, 13%);
-    padding: 0 5rem;
-    gap: 2rem;
+    gap: 8rem;
     text-align: center;
+}
+
+.feature {
+    width: auto;
 }
 
 .feature-typography h2 {
@@ -117,22 +118,24 @@ a {
     margin-bottom: 2rem;
 }
 
-.file-feature {
-    grid-area: file-feature;
+.file {
+    grid-area: file;
+    justify-self: end;
 }
 
-.security-feature {
-    grid-area: security-feature;
+.security {
+    grid-area: security;
+    justify-self: start;
 }
 
-.time-feature {
-    grid-area: time-feature;
-    padding-top: 4rem;
+.time {
+    grid-area: time;
+    justify-self: end;
 }
 
-.store-feature {
-    grid-area: store-feature;
-    padding-top: 4rem;
+.store {
+    grid-area: store;
+    justify-self: start;
 }
 
 /* The testimonial div consists of where to get more info and user reviews.*/
@@ -140,23 +143,20 @@ a {
     background-color: hsl(218, 28%, 13%);
 }
 
-/* Large image and learn more information under the features section */
 .banner {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (1, 1fr);
     grid-template-areas: 
     "banner testimonial-info";
     padding: 8rem 0 0 3rem;
     gap: 1rem;
     padding-bottom: 3rem;
+    align-items: center;
 }
 
 .testimonial-info h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: white;
-    margin-top: 3.5em;
     line-height: 1.5;
 }
 
@@ -166,11 +166,12 @@ a {
     color: white;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-    line-height: 2;
 }
 
 .banner-image {
     grid-area: banner;
+    justify-self: end;
+    padding-right: 5rem;
 }
 
 .testimonial-info {
@@ -191,33 +192,21 @@ a {
     line-height: 48px;
 }
 
-.info-link span:hover {
-    color: hsl(176, 68%, 64%);
-    padding-bottom: 13px;
-    border-bottom: 2px solid hsl(176, 68%, 64%);
-    line-height: 48px;
-    font-weight: 700;
-}
-
-/* Three box grid (row) containing user reviews */
+/* Three box grid containing user reviews */
 .user-container {
     background-color: hsl(218, 28%, 13%);
-    padding-bottom: 20rem;
+    padding: 10rem 0 25rem 0;
     position: relative;
 }
 
 .user-testimonial {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (1, 1fr);
     grid-template-areas: 
     "user-1 user-2 user-3";
     background-color: hsl(218, 28%, 13%);
-    padding: 6rem 4rem 1rem;
-    gap: 1rem;
-    background-image: url('../images/bg-quotes.png');
-    background-position: top 50px left 40px;
+    gap: 3rem;
     background-repeat: no-repeat;
+    justify-content: center;
 }
 
 .user-testimonial p {
@@ -230,35 +219,40 @@ a {
 }
 
 .user-testimonial h2 {
-    float: right;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
     font-size: 13px;
-    padding: 0 50% 0 0;
+    display: inline-grid;
+}
+
+.testimonial-content {
+    background-color: hsl(219, 30%, 18%);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    width: 400px; 
+}
+
+.user-profile {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.user-profile img {
+    border-radius: 30px;
+    width: 40px;
 }
 
 .user-1 {
     grid-area: user-1;
-    background-color: hsl(219, 30%, 18%);
-    padding: 2rem 1rem;
-    border-radius: 8px;
-
 }
 
 .user-2 {
     grid-area: user-2;
-    background-color: hsl(219, 30%, 18%);
-    padding: 2rem 1rem;
-    border-radius: 8px;
-
 }
 
 .user-3 {
     grid-area: user-3;
-    background-color: hsl(219, 30%, 18%);
-    padding: 2rem 1rem;
-    border-radius: 8px;
 }
 
 /* Get started here input box and button*/
@@ -268,21 +262,18 @@ a {
     position: relative;
 }
 
-/* One box grid containing the input box and button */
 .early-access {
     display: grid;
     position: absolute;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (2, 1fr);
     grid-template-areas: 
     "input-1";
     background-color: hsl(217, 28%, 15%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-position: 0 0;
-    padding: 3% 0 10%;
+    padding: 3% 0 10% 0;
     border-radius: 8px;
     text-align: center;
-    margin: -11% 15% 0;
+    margin: -11% 15% 0 15%;
     width: 65%;
 }
 
@@ -337,24 +328,24 @@ a {
 
 /* Footer */
 .footer-container {
-    max-width: 1300px;
-    margin:auto;
+	max-width: 1300px;
+	margin:auto;
 
 }
 
 .footer-row {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
     gap: 3rem;
 }
 
 .footer-container ul {
-    list-style: none;
+	list-style: none;
 }
 
 .footer {
-    background-color: hsl(216, 53%, 9%);
-    padding: 25% 0 10%;
+	background-color: hsl(216, 53%, 9%);
+    padding: 25% 0 10% 0;
 }
 
 .footer-col {
@@ -368,12 +359,12 @@ a {
     color: white;
     line-height: 1.5;
     font-size: 16px; 
-    margin-bottom: 35px;
-    position: relative;
+	margin-bottom: 35px;
+	position: relative;
 }
 
 .footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .footer-col ul li a { 
@@ -382,39 +373,38 @@ a {
     color: white;
     line-height: 1.5;
     font-size: 17px; 
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
-    padding-left: 8px;
+	color: #ffffff;
+	padding-left: 8px;
 }
 
 .footer-col .social-links a {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    background-color:  hsl(216, 53%, 9%);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	background-color:  hsl(216, 53%, 9%);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 .footer-logo {
     padding-bottom: 4rem;
 }
 
-/* Social media icons used in the footer */
 .icon {
     padding-right: 10px;
 }
@@ -428,6 +418,24 @@ ion-icon {
 ion-icon:hover {
     font-size: 45px;
 }
+/* 
+@media (max-width: 1050px) {
+    .banner {
+        grid-template-areas: 
+        "banner"
+        "testimonial-info";
+        gap: 2rem;
+    }
+
+    .user-testimonial {
+        grid-template-areas: 
+        "user-1"
+        "user-2"
+        "user-3";
+        padding-top: 6rem;
+        background-position: top 50px left 40px;
+    }
+} */
 
 /* Media queries for responsive components */
 @media (max-width: 750px) {
@@ -452,11 +460,16 @@ ion-icon:hover {
 
     .features-section {
         padding-top: 2rem;
+        gap: 3rem;
         grid-template-areas: 
-        "file-feature" 
-        "security-feature"
-        "time-feature" 
-        "store-feature";
+        "file" 
+        "security"
+        "time" 
+        "store";
+    }
+
+    .feature {
+        justify-self: center;
     }
 
     .feature-typography {
@@ -467,11 +480,25 @@ ion-icon:hover {
         grid-template-areas: 
         "banner"
         "testimonial-info";
-        gap: 0.5rem;
+        gap: 5rem;
     }
 
     .banner-image {
         width: 80%;
+        justify-self: center;
+        padding-right: 0rem;
+    }
+
+    .testimonial-info {
+        padding-left: 1rem;
+    }
+
+    .testimonial-info h1 {
+        font-size: 25px;
+    }
+
+    .user-container {
+        padding: 0rem 0rem 10rem 0rem;
     }
 
     .user-testimonial {
@@ -479,12 +506,8 @@ ion-icon:hover {
         "user-1"
         "user-2"
         "user-3";
-        padding-top: 6rem;
+        padding-top: 0rem;
         background-position: top 50px left 40px;
-    }
-
-    .user-testimonial h2{
-        padding: 0 15rem 0 0;
     }
 
     .btn-secondary {
@@ -497,30 +520,17 @@ ion-icon:hover {
     #input-1 {
         margin-top: 50%;
     }
+
     .early-access {
         height: 350px;
     }
 
+    .early-access p {
+        padding: 0rem 0rem;
+    }
+
     .footer{
-        padding: 50% 0 10%;
-    }
-}
-
-@media (max-width: 1050px) {
-    .banner {
-        grid-template-areas: 
-        "banner"
-        "testimonial-info";
-        gap: 0.5rem;
-    }
-
-    .user-testimonial {
-        grid-template-areas: 
-        "user-1"
-        "user-2"
-        "user-3";
-        padding-top: 6rem;
-        background-position: top 50px left 40px;
+        padding: 50% 0 10% 0;
     }
 }
 
@@ -530,7 +540,7 @@ ion-icon:hover {
         "user-1"
         "user-2"
         "user-3";
-        padding-left: 1rem;
+        padding: 0rem;
         background-position: top 50px left 35px;
     }
 
@@ -549,7 +559,7 @@ ion-icon:hover {
     }
 
     .footer{
-        padding: 70% 0 10%;
+        padding: 70% 0 10% 0;
     }
 }
 
@@ -572,11 +582,10 @@ ion-icon:hover {
     }
 
     .footer{
-        padding: 140% 0 10%;
+        padding: 140% 0 10% 0;
     }
 }
 
-/* Media queries for the footer */
 @media(max-width: 767px){
     .footer-col {
         width: 50%;
